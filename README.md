@@ -1,4 +1,4 @@
-# Gemini AI Codebase Generation
+# AI Promt Codebase Generation
 
 This Python script utilizes the Gemini AI API to generate codebase for user interfaces (UIs) and packages them into a zip file. The generated codebase includes files for a React frontend, a Node.js backend, and MongoDB storage, all integrated to create a functional application.
 
