@@ -1,0 +1,55 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Counter</title>
+</head>
+<body>
+  <p>Count: <span id="count">0</span></p>
+  <button id="increase">Increase</button>
+  <button id="decrease">Decrease</button>
+
+  <script>
+    let count = 0;
+    const countElement = document.getElementById('count');
+    const increaseButton = document.getElementById('increase');
+    const decreaseButton = document.getElementById('decrease');
+
+    increaseButton.addEventListener('click', () => {
+      count++;
+      countElement.textContent = count;
+    });
+
+    decreaseButton.addEventListener('click', () => {
+      count--;
+      countElement.textContent = count;
+    });
+  </script>
+</body>
+</html>
+```
+
+**Explanation:**
+
+1. **HTML Structure:**
+   - Sets up a `<p>` element to display the count value (`<span id="count">0</span>`).
+   - Creates two buttons with IDs "increase" and "decrease".
+
+2. **JavaScript Code:**
+   - **Initialization:**
+     - Declares a `count` variable set to 0 to store the counter value.
+     - Selects the HTML elements with IDs "count", "increase", and "decrease" using `document.getElementById()`.
+   - **Event Listeners:**
+     - Attaches a `click` event listener to the "increase" button:
+       - When clicked, it increments the `count` variable.
+       - Updates the content of the `countElement` `<span>` to display the new count value.
+     - Attaches a `click` event listener to the "decrease" button:
+       - When clicked, it decrements the `count` variable.
+       - Updates the content of the `countElement` `<span>` to display the new count value.
+
+**How it Works:**
+
+- When the "Increase" button is clicked, the `increaseButton.addEventListener` function executes. It increments the `count` variable by 1 and updates the `countElement`'s text content with the new value.
+- When the "Decrease" button is clicked, the `decreaseButton.addEventListener` function executes. It decrements the `count` variable by 1 and updates the `countElement`'s text content with the new value.
+
+Now, you have a simple counter with buttons to increase and decrease the count, and the display updates dynamically with each click.
